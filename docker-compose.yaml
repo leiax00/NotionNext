@@ -1,0 +1,23 @@
+services:
+  notion-next:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: leiax00/notion-next:latest
+    container_name: notion-next
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+      HTTP_PROXY: http://192.168.0.3:7890
+      HTTPS_PROXY: http://192.168.0.3:7890
+      NO_PROXY: localhost,127.0.0.0/8,10.1.0.0/16,11.1.0.0/16,192.168.0.1/16
+    env_file:
+      - .env
+    ports:
+      - "5555:3000"
+    networks:
+      - simple-zero
+
+networks:
+  simple-zero:
+    external: true
