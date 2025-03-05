@@ -17,9 +17,9 @@ export default function PostHero({ post, siteInfo }) {
   }
 
   // 文章全屏隐藏标头
-  if (fullWidth) {
-    return <div className='my-8' />
-  }
+  // if (fullWidth) {
+  //   return <div className='mt-16' />
+  // }
 
   const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
 

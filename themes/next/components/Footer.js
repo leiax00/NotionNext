@@ -42,13 +42,7 @@ const Footer = ({ title }) => {
         <br />
         <h1>{title}</h1>
         <span className='text-xs font-serif  text-gray-500 dark:text-gray-300 '>
-          Powered by{' '}
-          <a
-            href='https://github.com/tangly1024/NotionNext'
-            className='underline '>
-            NotionNext {siteConfig('VERSION')}
-          </a>
-          .
+          Powered by leiax00
         </span>
       </span>
     </footer>

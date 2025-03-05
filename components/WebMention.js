@@ -143,7 +143,7 @@ const WebMentionBlock = ({ frontMatter }) => {
   return (
     <div className='webmention-block'>
       <h1 className='webmention-header'>
-        powered by <a href="https://webmention.io" target='_blank' rel='noreferrer'>WebMention.io</a>
+        powered by leiax00
       </h1>
       <div className='webmention-block-intro'>
         You can{' '}
