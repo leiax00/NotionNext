@@ -1,0 +1,21 @@
+{
+  "name": "Node.js Development Container",
+  "image": "node:current",
+  "features": {
+    "node": "latest"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "npm.registry": "https://registry.npmmirror.com/"
+      }
+    }
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "postCreateCommand": "npm install -g npm@latest && npm install -g yarn",
+  "forwardPorts": [3000],
+  "remoteUser": "node"
+}
